@@ -6,9 +6,8 @@ using namespace std;
 
 class Conference
 {
-private:
-    string Name; // ФИО или наименование выступления
 protected:
+    string Name; // ФИО или наименование выступления
     // Геттеры
     virtual string Get_Name() = 0;
     // Сеттеры
