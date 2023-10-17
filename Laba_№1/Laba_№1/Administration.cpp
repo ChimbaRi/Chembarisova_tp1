@@ -8,9 +8,9 @@ string Administration::Get_Job_title() { return Job_title; }
 string Administration::Get_Area_of_responsibility() { return Area_of_responsibility; }
 
 Administration::Administration() {
-	Set_Name(nullptr);
-	Set_Job_title(nullptr);
-	Set_Area_of_responsibility(nullptr);
+	Set_Name("");
+	Set_Job_title("");
+	Set_Area_of_responsibility("");
 	cout << "Вызван конструктор без параметров для класса Administration" << endl;
 }
 Administration::Administration(string n, string jt, string aor) {

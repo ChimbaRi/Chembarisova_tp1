@@ -7,7 +7,7 @@ class Conf_program :
 private:
     int Day;
     int Month;
-    int Seconds;
+    int Minutes;
     int Hours;
 public:
     // Конструкторы
@@ -22,14 +22,14 @@ public:
     string Get_Name() override;
     int Get_Day();
     int Get_Month();
-    int Get_Seconds();
+    int Get_Minutes();
     int Get_Hours();
 
     // Сеттеры
     void Set_Name(string n) override;
     void Set_Day(int d);
     void Set_Month(int m);
-    void Set_Seconds(int s);
+    void Set_Minutes(int s);
     void Set_Hours(int h);
 };
 

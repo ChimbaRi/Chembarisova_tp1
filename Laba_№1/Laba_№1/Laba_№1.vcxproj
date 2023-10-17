@@ -132,7 +132,6 @@
     <ClCompile Include="Conf_program.cpp" />
     <ClCompile Include="Keeper.cpp" />
     <ClCompile Include="Laba_№1.cpp" />
-    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Speakers.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -140,8 +139,10 @@
     <ClInclude Include="Conference.h" />
     <ClInclude Include="Conf_program.h" />
     <ClInclude Include="Keeper.h" />
-    <ClInclude Include="Menu.h" />
     <ClInclude Include="Speakers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="read.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
