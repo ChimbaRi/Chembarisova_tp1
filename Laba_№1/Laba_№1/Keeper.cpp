@@ -37,32 +37,23 @@ void Keeper::Save() {
 	if (out.is_open())
 	{
 		// Выступающие
-		out << "Выступающие:" << endl;
 		for (int i = 0; i < Size_Speakers; i++) {
-			if (fIt == true) fIt = false;
-			else
-				out << "\n";
+			out << "\nВыступающие:" << endl;
 			out << Speak[i].Get_Name() << endl;
 			out << Speak[i].Get_Organization() << endl;
 			out << Speak[i].Get_Report() << endl;
 			out << Speak[i].Get_Annotation() << endl;
 		}
 		// Администрация
-		out << "\nАдминистрация:" << endl;
 		for (int i = 0; i < Size_Administration; i++) {
-			if (fIt == true) fIt = false;
-			else
-				out << "\n";
+			out << "\nАдминистрация:" << endl;
 			out << Admin[i].Get_Name() << endl;
 			out << Admin[i].Get_Job_title() << endl;
 			out << Admin[i].Get_Area_of_responsibility() << endl;
 		}
 		// Программа 
-		out << "\nПрограмма:" << endl;
 		for (int i = 0; i < Size_Conf_program; i++) {
-			if (fIt == true) fIt = false;
-			else
-				out << "\n";
+			out << "\nПрограмма:" << endl;
 			out << Prog[i].Get_Name() << endl;
 			out << Prog[i].Get_Day() << "/" << Prog[i].Get_Month() << endl;
 			out << Prog[i].Get_Hours()<<":" <<Prog[i].Get_Minutes()<< endl;
